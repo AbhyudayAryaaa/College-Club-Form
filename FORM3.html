@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Club Registration Form</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        .container {
+            width: 50%;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #999;
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        label {
+            font-weight: bold;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            border: 1px solid #999;
+        }
+        .gender-options, .club-options {
+            margin-bottom: 15px;
+        }
+        button {
+            width: 48%;
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 5px;
+            border: none;
+        }
+        .btn-submit {
+            background-color: #28a745;
+            color: white;
+        }
+        .btn-reset {
+            background-color: #dc3545;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>College Club Registration Form</h2>
+
+        <form>
+
+            <!-- Full Name -->
+            <label>Full Name:</label>
+            <input type="text" placeholder="Enter your full name" required>
+
+            <!-- Roll Number -->
+            <label>Roll Number:</label>
+            <input type="text" placeholder="Enter roll number" required>
+
+            <!-- Department -->
+            <label>Department:</label>
+            <input type="text" placeholder="Enter your department" required>
+
+            <!-- Year of Study -->
+            <label>Year of Study:</label>
+            <select required>
+                <option value="">-- Select Year --</option>
+                <option>1st Year</option>
+                <option>2nd Year</option>
+                <option>3rd Year</option>
+                <option>4th Year</option>
+            </select>
+
+            <!-- Gender -->
+            <label>Gender:</label>
+            <div class="gender-options">
+                <input type="radio" name="gender" value="Male" required> Male
+                <input type="radio" name="gender" value="Female"> Female
+                <input type="radio" name="gender" value="Other"> Other
+            </div>
+
+            <!-- Clubs -->
+            <label>Clubs Interested:</label>
+            <div class="club-options">
+                <input type="checkbox" value="Music Club"> Music Club <br>
+                <input type="checkbox" value="Sports Club"> Sports Club <br>
+                <input type="checkbox" value="Coding Club"> Coding Club <br>
+                <input type="checkbox" value="Drama Club"> Drama Club <br>
+                <input type="checkbox" value="Photography Club"> Photography Club
+            </div>
+
+            <!-- Email -->
+            <label>Email Address:</label>
+            <input type="email" placeholder="Enter your email" required>
+
+            <!-- Contact -->
+            <label>Contact Number:</label>
+            <input type="tel" placeholder="Enter your contact number" required>
+
+            <!-- Date of Birth -->
+            <label>Date of Birth:</label>
+            <input type="date" required>
+
+            <!-- Profile Photo -->
+            <label>Upload Profile Photo:</label>
+            <input type="file" accept="image/*">
+
+            <!-- Description -->
+            <label>Short Description / Reason for Joining:</label>
+            <textarea rows="4" placeholder="Write a short description..."></textarea>
+
+            <!-- Buttons -->
+            <div style="display: flex; justify-content: space-between;">
+                <button type="submit" class="btn-submit">Submit</button>
+                <button type="reset" class="btn-reset">Reset</button>
+            </div>
+
+        </form>
+    </div>
+
+</body>
+</html>
